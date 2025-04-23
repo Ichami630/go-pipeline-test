@@ -22,8 +22,11 @@ jobs:
     - name: Build
       run: go build -v
 
-    - name: Test (placeholder)
-      run: echo "No tests yet. Add tests to improve CI."
+    # - name: Test (placeholder)
+    #   run: echo "No tests yet. Add tests to improve CI."
+    - name: Run Tests
+      run: go test -v ./...
+
 
     - name: Deploy (placeholder)
       run: echo "Deployment step goes here!"
